@@ -96,7 +96,7 @@ img {width: 100%;}
     z-index: 2;
     width: 15%;
     position: absolute;
-    margin: 3% 17vw;
+    margin: 0 17vw;
     align-self: flex-end;
 }
 
