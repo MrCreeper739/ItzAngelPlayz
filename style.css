@@ -1,0 +1,510 @@
+body {
+
+    margin: 0;
+    font-family: 'Kalam';
+}
+
+:root {
+
+    --kit: #ffe8ad;
+    --border: #a7a094;
+    --borderLite: #c7b5ab;
+    --borderDark: #8b7f79;
+    --cyan: #c3fcdd;
+    --aqua: #bcece5;
+    --lightBlue: #eef5ff;
+    --borderBlack: #756b66;
+    --brightBlue: #f1fffd;
+}
+
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+
+.header {
+
+    width: 100%;
+    height: 600px;
+    background-color: var(--border);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#sqrL1, #sqrL2, #sqrR2, #sqrR1 {
+
+    width: 15%;
+    height: 110%;
+    transform: skewX(-8deg) translateY(-2%);
+    box-shadow: -1vh 0 1vh 0 rgba(0,0,0,0.2);
+}
+
+#sqrL1, #sqrR1 {
+
+    width: 10%;
+    background-color: var(--cyan);
+}
+#sqrL2, #sqrR2 {
+
+    width: 10%;
+    background-color: var(--kit);
+    z-index: 1;
+}
+#sqrR1, #sqrR2 {
+
+    box-shadow: 1vh 0 1vh 0 rgba(0,0,0,0.2);
+    transform: skewX(8deg);
+}
+#sqrMid {
+
+    background-image: url(images/BannerWord.png);
+    background-position: center center;
+    background-size: cover;
+    margin: 0 -9%;
+    width: 77%;
+    height: 100%;
+    text-align: center;
+}
+#sqrMid h1 {
+
+    font-size: 6vw;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 580px;
+    color: var(--cyan);
+    text-shadow: 0 0 2vh var(--aqua);
+    -webkit-text-stroke: 0.25vw var(--aqua);
+    font-family: Consolas;
+}
+.header img {
+
+    width: 10vw;
+    position: absolute;
+    align-self: flex-end;
+    transform: translateX(-250%);
+    z-index: 1;
+    filter: drop-shadow(0 0 1vh rgba(0,0,0,0.5));
+}
+
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+
+.navbarCont {
+
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 6;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    filter: drop-shadow(0 0 .5vh rgba(0,0,0,0.3));
+    
+}
+
+.navbar {
+
+    height: 70px;
+    display: flex;
+    width: 100%;
+    background-color: var(--borderLite);
+    z-index: 2;
+}
+
+.navbar a {
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    line-height: 70px;
+}
+
+.navbar a:hover {
+
+    background-color: var(--borderDark);
+}
+
+#kit {
+
+    position: absolute;
+    width: 100%;
+    height: 450%;
+    background-image: url(images/KitsHead.png);
+    background-size: 192px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    align-self: center;
+    transition: .5s;
+}
+
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+
+.content {
+
+    background-color: var(--lightBlue);
+    padding: 1px 0 0 0;
+}
+
+@keyframes moveBG {
+
+    from {background-position-x: 0px;}
+    to   {background-position-x: 102.8vw;}
+}
+
+.section {
+
+    display: flex;
+    width: 100%;
+    background-image: url(images/KitJumping.png);
+    background-size: 16vh;
+    background-color: var(--borderLite);
+    animation: moveBG infinite 100s linear;
+    margin: 15% 0 0 0;
+}
+
+.section h1 {
+    
+    font-family: 'Josefin Sans';
+    margin: 5%;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,1),
+                 -1px -1px 0 rgba(0,0,0,1),
+                 -1px 1px 0 rgba(0,0,0,1),
+                 1px -1px 0 rgba(0,0,0,1);
+    font-size: 400%;
+}
+.section h3 {
+    
+    margin: 0 0 5% 5%;
+    color: var(--borderBlack);
+    font-size: 180%;
+}
+.section .dash {
+
+    transform: skewX(-5deg) translateX(-2%);
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    overflow: hidden;
+    margin: 0;
+}
+.section .dash div {
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 0 10% 0 0;
+    transform: skewX(5deg);
+}
+
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+
+.linksCont {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.linksCont div, .linksCont a {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#youtube, #fiverr, #discord {
+
+    width: 33.3333%;
+    background-color: red;
+    transition: .25s;
+}
+#fiverr {background-color: #1dbf73;}
+#discord {background-color: #5865F2;}
+
+#youtube svg, #fiverr img, #discord img {
+
+    width: 50%;
+    height: 100%;
+}
+#youtube:hover , #fiverr:hover , #discord:hover {
+
+    height: 200%;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.wink {
+
+    width: 100%;
+    height: 400px;
+    background-image: url(images/winkKit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+
+.footer {
+
+    width: 100%;
+    background-color: black;
+    color: white;
+    min-height: 35vh;
+    display: flex;
+}
+
+.footer .cont, .footer .cont2 {
+
+    width: 20%;
+    background-color: #181818;
+    min-height: 35vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: 'Josefin Sans';
+    font-size: 2vw;
+}
+
+.footer .cont2 {
+
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+}
+
+.footer h1, .footer h2 {
+
+    font-family: 'Josefin Sans';
+}
+
+.footer .cont h1 {
+    
+    margin: 10% 0 10% 10%;
+    font-size: 3vw;
+}
+
+.footer .cont h2 {
+    
+    margin: 0 0 0 20%;
+    font-size: 2vw;
+}
+
+#MrCreeper, #Kristina, #Hana  {
+
+    width: 100%;
+    height: 2vw;
+    background-color: #181818;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: .25s ease;
+}
+
+#MrCreeper:hover, #Kristina:hover, #Hana:hover {
+
+    transition: .25s ease;
+    cursor: default;
+    background-color: black;
+}
+
+
+
+/* = = = = = = = = = = = */
+
+/* =====  =====  ======= */
+/* F A N  A R T  P A G E */
+/* =====  =====  ======= */
+
+/* = = = = = = = = = = = */
+
+
+
+#fanArt .header {
+
+    background-color: var(--aqua);
+    display: flex;
+    align-items: center;
+    background-image: url(images/KitLisa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 30vw center;
+}
+
+#fanArt .header h1 {
+
+    font-family: 'Josefin Sans';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,1),
+                 -1px -1px 0 rgba(0,0,0,1),
+                 -1px 1px 0 rgba(0,0,0,1),
+                 1px -1px 0 rgba(0,0,0,1);
+    font-size: 1000%;
+    width: 50%;
+    text-align: center;
+}
+
+#ref h2 {
+
+    font-size: 400%;
+    font-family: 'Josefin Sans';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,1),
+                 -1px -1px 0 rgba(0,0,0,1),
+                 -1px 1px 0 rgba(0,0,0,1),
+                 1px -1px 0 rgba(0,0,0,1);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    box-shadow: 0.5vw 0 1vh rgba(0,0,0,0.1);
+}
+#ref {
+
+    width: 50%;
+    height: 100%;
+    background-color: var(--kit);
+    display: flex;
+}
+
+#refnc {
+
+    width: 80%;
+    height: 100%;
+    background-image: url(images/AngelRef.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--aqua);
+}
+
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+/* ===== */
+
+#fanArt {background-color: var(--aqua);}
+
+#fanArt .content {
+    
+    padding: 0;
+    background-color: var(--aqua);
+}
+
+.content #border {
+
+    width: 100%;
+    height: 150px;
+    background-color: var(--kit);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.content #border h2 {
+
+    font-size: 600%;
+    font-family: 'Josefin Sans';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,1),
+                 -1px -1px 0 rgba(0,0,0,1),
+                 -1px 1px 0 rgba(0,0,0,1),
+                 1px -1px 0 rgba(0,0,0,1);
+    margin: 0;
+}
+
+#images {
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clmn {
+
+    min-height: 1%;
+    width: 25%;
+    margin: 0 auto;
+}
+.clmn img {
+
+    width: 94%;
+    box-shadow: 0 0 1vh rgba(0,0,0,0.5);
+    transition: .5s;
+}
+.clmn .holder:hover img {
+
+    filter: blur(10px) grayscale(2);
+}
+.clmn .holder div {
+
+    opacity: 0;
+    transition: .5s;
+    color: #fff;
+    font-size: 200%;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 1px 1px 0 rgba(0,0,0,1),
+                 -1px -1px 0 rgba(0,0,0,1),
+                 -1px 1px 0 rgba(0,0,0,1),
+                 1px -1px 0 rgba(0,0,0,1);
+    text-align: center;
+}
+.clmn .holder {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    position: relative;
+}
+.clmn .holder:hover div {
+
+    opacity: 1;
+}
+
+#inf {
+
+    width: 100%;
+    background-color: var(--kit);
+    text-align: center;
+    padding: .5% 0;
+    box-shadow: 0 0 1vh rgba(0,0,0,0.3);
+    margin: 3% 0 0 0;
+}
+#inf h2 {
+
+    font-size: 250%;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,1),
+                 -1px -1px 0 rgba(0,0,0,1),
+                 -1px 1px 0 rgba(0,0,0,1),
+                 1px -1px 0 rgba(0,0,0,1);
+}
+#inf a {color: #fff;}
