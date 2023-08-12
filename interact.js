@@ -9,7 +9,7 @@ function MrCreeper() {
     names[0].style.color = `black`;
     cont2[0].innerHTML = "An Egyptian Computer nerd, all the project code are done by me. <br><br>\
     Here's my Discord : <br>\
-    MrCreeper#1339";
+    mr.creeper";
 }
 function Kristina() {
 
@@ -19,7 +19,7 @@ function Kristina() {
     names[1].style.color = `black`;
     cont2[0].innerHTML = "Hi I'm Kristina, I'm an artist who was a part in this project, <br> most of the artwork you see here are done by me in my slighlty chibi style. <br>\
     If you want to DM me here's my Discord : <br>\
-    -Kristina-#2521 <br>\
+    kristinaxurmom <br>\
     Thanks for reading.";
 }
 function Hana() {
@@ -30,7 +30,7 @@ function Hana() {
     names[2].style.color = `black`;
     cont2[0].innerHTML = "Hihi! I'm Hana who only drew one but I'm also a part of this project! <br> Please subscribe to my beloved Angel. 🙏<br>\
     If you want to DM me, here's my discord <3 <br>\
-    Hana !!#8503";
+    Hana !!#3570";
 }
 
 function reSize() {
